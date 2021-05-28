@@ -1,0 +1,46 @@
+<div class="rform">
+    <form      [formGroup]="commentForm"  (submit)="saveReview()">
+           <table>
+               <tr>
+               <th>Name</th>
+               <td><input type="text" formControlName="name"></td>
+               <td>
+                      <div *ngIf='commentForm.controls.name.hasError("required")'>
+                              Should be filled</div>
+                   <div *ngIf='commentForm.controls.name.hasError("needFormat")'>
+                                  No Symbols allowed for name</div>
+               </td>
+               </tr>
+                <tr>
+               <th>Email</th>
+               <td><input type="text" formControlName="email"></td>
+               <td>
+                      <div *ngIf='commentForm.controls.email.hasError("required")'>
+                              Should be filled</div>
+                      <div *ngIf='commentForm.controls.email.hasError("pattern")'>
+                                  Should be in email format</div>
+               </td>
+               </tr>
+              
+               <tr>
+                   <th>Message</th>
+                   <td><textarea rows=6 cols=50 formControlName="message">
+                       </textarea></td>
+                   <td>
+                          <div *ngIf='commentForm.controls.message.hasError("required")'>
+                                  Should be filled</div>
+                          <div *ngIf="commentForm.controls.message.errors?.minlength">Message should be atleast 20 
+                              characters long
+                          </div>
+                                 
+                   </td>
+               </tr>
+               <tr><td colspan="3" align="center">
+                      <button type="submit"  class="btn btn-primary" [disabled]="!commentForm.valid">
+                                 Post Review</button>
+                  </td></tr>
+           </table>
+      
+      
+      </form>
+  </div>

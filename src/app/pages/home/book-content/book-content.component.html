@@ -39,3 +39,9 @@
         {{ele}} <br>
     </p>
 </div>
+<div style="overflow: hidden; margin: 30px;">
+<h3 [style.color]="'darkblue'">Comment</h3>
+<app-comments *ngFor="let x of comments" [comment]="x"></app-comments>
+<h3>Send your comment....</h3>
+<app-comment-form [id]="Content.id"></app-comment-form>
+</div>

@@ -10,9 +10,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BookDisplayComponent } from './pages/home/book-display/book-display.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BookContentComponent } from './pages/home/book-content/book-content.component'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiscountPipe } from './pipes/discount.pipe';
 import { FilterbooksPipe } from './pipes/filterbooks.pipe';
+import { CommentsComponent } from './pages/home/book-content/comments/comments.component';
+import { CommentFormComponent } from './pages/home/book-content/comment-form/comment-form.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,16 @@ import { FilterbooksPipe } from './pipes/filterbooks.pipe';
     BookDisplayComponent,
     BookContentComponent,
     DiscountPipe,
-    FilterbooksPipe
+    FilterbooksPipe,
+    CommentsComponent,
+    CommentFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
