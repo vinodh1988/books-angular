@@ -1,0 +1,33 @@
+<h2>Contact US</h2>
+<h5>Please Enter your details.</h5>
+<h5>Our customer care subordinate will contact you</h5>
+<form action="">
+    <table class="table table-borderless">
+        <tbody>
+            <tr>
+                <td><h6>Enter your name</h6></td>
+                <td><input type="text" [(ngModel)]="name" name="username" class="form-control"></td>
+                <td><h6>Enter your Email</h6></td>
+                <td><input type="email" [(ngModel)]="email" name="email" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><h6>Enter your Phone Number</h6></td>
+                <td><input type="text" [(ngModel)]="phone_number" name="phone_number" class="form-control"></td>
+                <td><h6>Enter Your Instagram Id</h6></td>
+                <td><input type="text" [(ngModel)]="insta_id" name="insta_id" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>
+                   
+                    <div id="btnDiv">
+                        <p *ngIf=hide class="text text-success">We will contact you shortly!!</p>
+                        <button class="btn btn-success" (click)="postData()">Submit</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+

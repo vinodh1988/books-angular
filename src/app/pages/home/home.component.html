@@ -1,0 +1,10 @@
+<h2>Best Sellers</h2>
+<div class="alert alert-info">
+    <select [(ngModel)]="pricetype">
+        <option>High Price</option>
+        <option>Low Price</option>
+        <option>Moderate Price</option>
+        <option>All</option>
+    </select>
+</div>
+<app-book-display *ngFor="let ele of titles|filterbooks:pricetype" [element]='ele'></app-book-display>

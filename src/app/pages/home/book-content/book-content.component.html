@@ -1,0 +1,41 @@
+<img src="http://localhost:8090/{{Content.image}}" alt="">
+<div>
+    <table>
+        <tr>
+            <td>
+                Name 
+            </td>
+            <td>
+                {{Content.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Author 
+            </td>
+            <td>
+                {{Content.author}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Price 
+            </td>
+            <td>
+                {{Content.price}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Book Type 
+            </td>
+            <td>
+                {{Content.type}}
+            </td>
+        </tr>
+    </table>
+   
+    <p  *ngFor="let ele of Content.description">
+        {{ele}} <br>
+    </p>
+</div>

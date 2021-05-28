@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(92, 97, 167);
+}
+
+nav a{
+    color: white;
+}
+.leftDiv{
+    position: absolute;
+    right: 0%;
+}
+

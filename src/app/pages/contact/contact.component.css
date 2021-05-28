@@ -1,0 +1,32 @@
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+h5{
+    margin: 30px;
+    color: brown;
+}
+.table{
+    margin-top: 50px;
+    width: fit-content;
+}
+form{
+    margin-left: 30px;
+}
+h6{
+    color: rgb(119, 88, 48);
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+#btnDiv{
+    padding-top: 30px;
+}
+
+
+input{
+    border-radius: 8px;
+    border: 2px solid burlywood;
+    width: 200px;
+}

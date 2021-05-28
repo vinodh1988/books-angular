@@ -1,0 +1,15 @@
+#mainDiv{
+    margin-left: 8%;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    float: left;
+    margin: 30px;
+}
+
+.card img{
+    height: 300px;
+    width: 300px;
+}

@@ -1,0 +1,13 @@
+*{
+    color: rgb(70, 37, 71);
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    padding:20px;
+    margin-right: 50px;
+    float: left;
+    height: 500px;
+    width: 700px;
+    right: 0%;
+}
